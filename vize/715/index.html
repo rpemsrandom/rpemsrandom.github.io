@@ -17,15 +17,15 @@
                   'Sanaa R', 'Daryn R', 'Stephen R', 'Will V', 'Cache W', 'Malachi W', 
                   'Sophie W', 'Kaden W'];
 		var count = 50
-		def roll() {
+		func roll() {
 			var person = people[Math.floor(Math.random()*people.length)];
 			document.getElementById('person').innerHTML=person;
 			var count = count - 1;
 			if count != 0 {
-				setTimeout(roll, 100);
+				setTimeout(roll, 50);
 			}
 		}
-    		setTimeout(roll, 0.1);
+    		setTimeout(roll, 50);
 		</script>
 	</body>
 </html>
