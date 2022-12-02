@@ -21,7 +21,7 @@
 			var person = people[Math.floor(Math.random()*people.length)];
 			document.getElementById('person').innerHTML=person;
 			var count = count - 1;
-			if count != 0 {
+			if (count != 0) {
 				setTimeout(roll, 50);
 			}
 		}
