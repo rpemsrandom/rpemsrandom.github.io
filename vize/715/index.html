@@ -16,8 +16,16 @@
                   'Mi\'onte M', 'Azaria M', 'Harlow M', 'Evan M', 'Estelle (Zir) O', 'Shanti P', 
                   'Sanaa R', 'Daryn R', 'Stephen R', 'Will V', 'Cache W', 'Malachi W', 
                   'Sophie W', 'Kaden W'];
-		var person = people[Math.floor(Math.random()*people.length)];
-		document.getElementById('person').innerHTML=person;
+		var count = 50
+		def roll() {
+			var person = people[Math.floor(Math.random()*people.length)];
+			document.getElementById('person').innerHTML=person;
+			var count = count - 1;
+			if count != 0 {
+				setTimeout(roll, 0.1);
+			}
+		}
+    setTimeout(roll, 0.1);
 		</script>
 	</body>
 </html>
