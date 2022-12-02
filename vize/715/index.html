@@ -9,7 +9,7 @@
 		<br>
 		<div>Reload to change</div>
 		<br>
-		<div id='person'></div>
+		<div id='person'>Wait</div>
 		<script>
 		var people = ['Daxton A', 'Ziva A', 'Dusk A', 'Ava B', 'Eli B', 'Denver B', 'London C', 
 									'Miles C', 'Kai F', 'London F', 'Alex G', 'Mary H', 'Aissata J', 'Cameron L', 
@@ -20,7 +20,7 @@
 		function roll() {
 			var person = people[Math.floor(Math.random()*people.length)];
 			document.getElementById('person').innerHTML=person;
-			if (stop) {
+			if (go) {
 				setTimeout(roll, 50);
 			}
 		}
