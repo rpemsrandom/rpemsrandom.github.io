@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+div {margin: auto; width: 50%;}
+h1 {margin: auto; width: 50%;}
+</style>
+
+<h1>RPEMS Random Vize 715</h1>
+<br>
+<div>Reload to change</div>
+<br>
+<div id='person'>test</div>
+
+<script>
+var people = ['Jonothan A', 'Sarah B', 'Aliyah B', 'Beckett B', 'Jasmine B', 'Hugo B', 
+						'Edalia C', 'Verona C', 'Frances C', 'Shane D', 'Lillanna D', 'Jonas F', 
+                        'Tancredi F', 'Ray G', 'Christine G', 'Madison H', 'Thanushaa J', 
+                        'Finn L', 'Sarah L', 'Sonic M', 'Sienna M', 'Phoenix M', 'Zephaniah N', 
+                        'Anthony P', 'Avery P', 'Rabi R', 'Ysabella R', 'Carlton S', 'Lila S', 
+                        'Daniel S', 'Prayash S', 'Robert T'];
+var person = people[Math.floor(Math.random()*people.length)];
+document.getElementById('person').innerHTML=person
+</script>
+
+</body>
+</html>
