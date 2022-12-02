@@ -20,12 +20,11 @@
 		function roll() {
 			var person = people[Math.floor(Math.random()*people.length)];
 			document.getElementById('person').innerHTML=person;
-			var count = count - 1;
+			count--;
 			if (count != 0) {
 				setTimeout(roll, 50);
 			}
-    		setTimeout(roll, 50);
-		
+    		roll();
 		</script>
 	</body>
 </html>
