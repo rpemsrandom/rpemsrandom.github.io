@@ -9,23 +9,27 @@
 		<br>
 		<div>Reload to change</div>
 		<br>
-		<div id='person'>test</div>
+		<div id='person'></div>
 		<script>
 		var people = ['Daxton A', 'Ziva A', 'Dusk A', 'Ava B', 'Eli B', 'Denver B', 'London C', 
 									'Miles C', 'Kai F', 'London F', 'Alex G', 'Mary H', 'Aissata J', 'Cameron L', 
                   'Mi\'onte M', 'Azaria M', 'Harlow M', 'Evan M', 'Estelle (Zir) O', 'Shanti P', 
                   'Sanaa R', 'Daryn R', 'Stephen R', 'Will V', 'Cache W', 'Malachi W', 
                   'Sophie W', 'Kaden W'];
-		var count = 50;
+		var go = True
 		function roll() {
 			var person = people[Math.floor(Math.random()*people.length)];
 			document.getElementById('person').innerHTML=person;
-			var count = count - 1;
-			if (count > 0) {
+			if (stop) {
 				setTimeout(roll, 50);
 			}
 		}
+		function stop() {
+			var go = False
+		}
     		setTimeout(roll, 50);
+		setTimeout(stop, 2500);
+		
 		</script>
 	</body>
 </html>
